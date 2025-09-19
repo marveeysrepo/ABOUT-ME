@@ -1,0 +1,164 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --primaryColor: #F0F4F7;
+    --secondaryColor: #E8E2D7;
+    --accentColor: #3498DB;
+    --mainText: #2C3E50;
+    --white:#FFFFFF;
+    --btnHover: #2980B9;
+    --shadow: 0 4px 15px rgba(44, 62, 80, 0.08);
+}
+html {font-size: clamp(1rem, 0.75rem + 1.5vw, 2rem);}
+
+body {
+     height: 100vh;
+    margin: 0;
+    line-height: 1.6;
+    padding: 0;
+    background-color: var(--primaryColor);
+    color: var(--mainText);
+    box-sizing: border-box;
+    font-family: Arial, Roboto, sans-serif;
+}
+/* Header & Nav style */
+header {
+    height: fit-content;
+    width: 100vw;
+     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: unset;
+}
+nav {
+    position: absolute;
+    background-color: var(--primaryColor);
+    z-index: 500;
+    top: 0;
+     width: 30%;
+    top: 0;
+    left: -30000px;
+    padding: 1.5rem 0;
+    text-align: center;
+    border-bottom: 1px solid #E0E7ED;
+    height: 500px;
+}
+nav.show {
+    left: 0;
+}
+
+
+
+i {
+    background: transparent;
+}
+i:hover {
+    color: var(--btnHover);
+}
+li {
+    list-style-type: none;
+    padding: 10px;
+}
+li a {
+    color: var(--mainText);
+    margin:  0 1.5rem;
+    transition: color 0.3s ease;
+}
+li a:hover {
+    color: var(--accentColor);
+}
+
+/* Main content and section style */
+main { 
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+.profileCard {
+    background-color: var(--white);
+    padding: 3rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+/* Heading & Links and button*/
+h1, h2, h3 {
+    color: var(--accentColor);
+    text-align: center;
+    font-weight: 600;
+}
+ a {
+  font-weight: bold;
+    color: var(--accentColor);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/*   nav toggle button */
+#toggleBtn { display: block;
+    background: transparent;
+    outline: none;
+    border: none;
+/*     font-size: 2rem;
+ */    margin: 1rem 2rem 0 auto;
+    cursor: pointer;
+    color: var(a);
+    transition: transform 0.3s ease;
+}
+#toggleBtn:hover {
+    transform: rotate(90deg);
+}
+.button {
+    background-color: var(--accentColor);
+    color: var(--white);
+    padding: 12px 24px;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.button:hover {
+    background-color: var(--btnHover);
+    transform: translateY(-2px);
+}
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+}
+/* @media screen  and (min-width: 900px) {
+    h1 {font-size: 2.8rem;}
+    h2 {font-size: 2rem;}
+} */
+@media screen and (min-width:1024px) {
+    #toggleBtn { display: none;
+    right: 99333300;
+}
+nav {
+    position: unset;
+    background-color: var(--primaryColor);
+    z-index: unset;
+    top: unset;
+     width: 100vw;
+    left: unset;
+    padding: unset;
+    text-align: center;
+    border-bottom: 1px solid #E0E7ED;
+    height: unset;
+}
+header {
+    height: auto !important;
+}
+nav ul li {
+    display: inline-block;
+    flex-direction: row;
+}
+nav.show {
+    left: 0;
+}
+}
