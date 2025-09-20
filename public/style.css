@@ -10,6 +10,11 @@
     --white:#FFFFFF;
     --btnHover: #2980B9;
     --shadow: 0 4px 15px rgba(44, 62, 80, 0.08);
+    --success: #16a34a;
+    --error:#dc2626;
+    --formShadow: 0 4px 6px -1px rgba(0, 0, 0, 0.6), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --submitBtnShadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.6);
+    --inputShadow:0 1px 2px 0 rgba(0,0,0, 0.05);
 }
 html {scroll-behavior: smooth;}
 body {font-size: clamp(1rem, 1.5vw + 0.5rem, 1.5rem);
@@ -159,6 +164,80 @@ img {
     width: 100%;border-radius: 10px; max-width: 400px;
     box-sizing: border-box;box-shadow: var(--shadow);
 } .contentBox { width: fit-content;margin-bottom: 1.5rem;}
+/* form style */
+#form {
+    box-sizing: border-box;
+    margin-top: 3rem;
+    background-color: whitesmoke;
+    border-radius: 1rem;
+    max-width: 27rem;
+    width: 100%;
+    padding: 2rem;
+    box-shadow:var(--formShadow);
+}
+#form h2 {
+    font-weight: 700;
+    color: var(--mainText);
+    margin-bottom: 1.2rem;
+}
+.title {
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+label {
+    display: block;
+    font-weight: 600;
+    color: #374151;
+    margin-top: .785rem;
+}
+input, textarea {
+    margin-top: 0.25rem;
+    outline: 2px solid transparent;
+    width: 90%;
+    box-shadow: var(--inputShadow);
+    transition: all .3ms ease-in-out;
+    padding: 0.5rem 1rem;
+    background-color: #f9fafb;
+    border: 1px solid grey;
+    border-radius: 0.375rem;
+}
+input:focus, textarea:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 2px white;
+    border-color: var(--accentColor);
+}
+#submitBtn {
+    width: 100%;
+    color: white;
+    background-color: #3498DB;
+    padding: 0.75rem 1rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    transition: background-color .3s ease-in-out;
+    box-shadow: var(--submitBtnShadow);
+     margin: .76rem auto;
+     text-align: center;
+    cursor: pointer;
+}
+#submitBtn:hover {
+    background-color: var(--btnHover);
+}
+#responseMessage {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+}
+#responseMessage.success {
+    color: var(--success);
+}
+#responseMessage.error {
+   color: var(--error);
+}
+.setDate {
+    color: var(--success);
+    margin-top: 3rem;
+}
 @media (max-width: 768px) {main {padding: 10px;}}
 @media screen and (min-width:1024px) {#toggleBtn { display: none;}
 nav {

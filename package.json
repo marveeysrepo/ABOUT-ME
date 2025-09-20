@@ -1,5 +1,5 @@
 {
-  "name": "about-me",
+  "name": "About-me",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
@@ -7,11 +7,14 @@
     "start": "node server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Marveey Goodlife",
   "license": "ISC",
-  "description": "",
+  "description": "This is a personal portfolio page",
   "dependencies": {
+    "body-parser": "^2.2.0",
+    "dotenv": "^16.5.0",
     "express": "^5.1.0",
+    "nodemailer": "^7.0.3",
     "nodemon": "^3.1.10",
     "path": "^0.12.7"
   }

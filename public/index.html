@@ -56,8 +56,33 @@
              <p>Whether you need a simple landing pagem newsletter,, a detailed portfolio, brand website, i am ready to help you turn your vision into reality. I am open to work with clients across various industries and locations, driven by a desire to help people from all work of life build a strong online prescence <br> I'm always up for new challenge and collaboration. Let's create something innovative together.</p>
             <div class="btns">
             <a href="#" id="port">View my portfolio</a>
-             <a href="tel:07053902558" id="button">Click me</a>
             </div>
+            </div>
+            <div id="form">
+                <h2>Contact Us</h2>
+                <p class="title">Please fill out the form below to get in touch. We'll get back to you as soon as possible.</p>
+                <form action="/submitForm" method="POST" id="contactForm">
+                    <div>
+        <label for="username">Name</label>
+        <input type="text" name="username" id="username" required>
+                    </div>
+                    <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+                    </div>
+                    <div>
+            <label for="subject"> Subject</label>
+            <input type="text" name="subject" id="subject" required>
+                    </div>
+                    <div>
+            <label for="message">Message</label>
+<textarea name="message" id="message" rows="4"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" id="submitBtn">Send Message</button>
+                    </div>
+                </form>
+                <div id="responseMessage"></div>
             </div>
         </section>
     </main>
