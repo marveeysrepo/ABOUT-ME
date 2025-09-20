@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Marveey Goodlife</title>
@@ -19,28 +19,76 @@
         <button type="button" id="toggleBtn"><i class="fa-solid fa-bars"></i></button>
     </header>
     <main>
+                <!-- About me section -->
         <section id="hero" class="profileCard">
-            <div>
+            <div id="intro">
+                <div class="contentBox">
             <h1>Marveey Goodlife</h1>
-             <p>Hi Everyone Welcome to my little world</p>
+             <p>I'm  a  website developer dedicated to building stylish, functional websites that help people and individual succeed. </p>
+             <p>
+                My interest for web design came in a curious way. When i first started using a computer in 2019, I found myself clicking "inspect" on web pages and diving into the code. I had no idea what it was at that time.
+            
+                 Seeing how I could change things on the screen by just tweaking a few lines of code on the Google developer environment was like a superpower. It was then that I knew i wanted to be more than just a user, i wanted to be a creator.
+             
+                What started as a childhood curiosity has now become a passion for solving problems and bringing ideas live on the web.
+             </p>                </div>
+              <div class="profileImg">
+                 <img src="images/marveey.jpg" alt="My profile picture" width="400" class="img">
+            </div>
             </div>
         </section>
+        <!-- About me section -->
         <section id="about" class="profileCard">
             <div>
-            <h2>About Me</h2>
-             <p>Hi Everyone Welcome to my little world</p>
+            <h2>my goals</h2>
+            <!--  <p>
+                I believe that the best webpages are built on the the foundation of trust and collaboration. My goal is not to just build project, but to make the process simple and transparent. I approach every project with a focus on open communication, ensuring you feel confident and informed every step of the way.
+             </p> -->
+             <p>
+                I am currently focused on expanding my skill set to <b>full-stack development</b>, combining my expertise in front-end technologies like <b><abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="Cascading StyleSheets">CSS</abbr>, and JavaScript</b> with my growing knowledge of back-end logic using <b>Node.js, Express</b> and other frameworks i'll learn. I'm passonate about building from scratch and crafting custom solution that are tailored to your unique need.
+             </p>
             </div>
         </section>
+                <!-- Contact me section -->
         <section id="contact" class="profileCard">
             <div>
-            <h2>Get in Touch</h2>
-             <p>Hi Everyone Welcome to my little world</p>
-             <a href="#" class="button">Click me</a>
+            <h2>let's build together</h2>
+             <p>Whether you need a simple landing pagem newsletter,, a detailed portfolio, brand website, i am ready to help you turn your vision into reality. I am open to work with clients across various industries and locations, driven by a desire to help people from all work of life build a strong online prescence <br> I'm always up for new challenge and collaboration. Let's create something innovative together.</p>
+            <div class="btns">
+            <a href="#" id="port">View my portfolio</a>
+            </div>
+            </div>
+            <div id="form">
+                <h2>Contact Us</h2>
+                <p class="title">Please fill out the form below to get in touch. We'll get back to you as soon as possible.</p>
+                <form action="/submitForm" method="POST" id="contactForm">
+                    <div>
+        <label for="username">Name</label>
+        <input type="text" name="username" id="username" required>
+                    </div>
+                    <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+                    </div>
+                    <div>
+            <label for="subject"> Subject</label>
+            <input type="text" name="subject" id="subject" required>
+                    </div>
+                    <div>
+            <label for="message">Message</label>
+<textarea name="message" id="message" rows="4"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" id="submitBtn">Send Message</button>
+                    </div>
+                </form>
+                <div id="responseMessage"></div>
             </div>
         </section>
     </main>
+
     <footer>
-        <div>
+        <div id="socialLink">
             <a href="">
                 <i class="fa-brands fa-linkedin" title="LinkedIn"></i>
             </a>
@@ -52,8 +100,15 @@
             <a href="" title="wordpress">
             <i class="fa-solid fa-globe"></i></a>
         </div>
+        <div class="footP">
         <p> &copy; Developed by <a href="#">Marveey Goodlife</a> in collaboration with MGLTechHub</p>
+        </div>
+        <div id="date"></div>
     </footer>
     <script src="script.js"></script>
+    <script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
