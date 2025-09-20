@@ -7,9 +7,11 @@ const app = express();
 const path = require("path");
 //initialize  port
 const port = 8080
-
+const oneYear = 31536000;
 // use express app to serve static
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "public"), {
+    maxAge: oneYear * 1000
+}));
 
 // Listen to port
 app.listen(port, () => {
