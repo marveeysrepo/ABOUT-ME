@@ -6,15 +6,26 @@
     <link rel="stylesheet" href="style.css">
     <title>Marveey Goodlife</title>
     <script src="https://kit.fontawesome.com/184a11b74d.js" crossorigin="anonymous" defer></script>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
-                <li><a href="#about"><i class="fa-solid fa-user"></i> About</a></li>
-                <li><a href="#contact"><i class="fa-solid fa-business-time"></i> Contact</a></li>
-            </ul>
+            <div class="innerNav">
+                <div class="logoAndBtn">
+<a href="#" class="logo">Marveey Goodlife</a>
+        <button type="button" id="closeBtn"><i class="fa-solid fa-times"></i></button>
+                </div>
+                
+
+            <div class="navLinks">
+                <a href="#" class="navLink">
+    <i class="fa-solid fa-house"></i> Home</a>
+                <a href="#about" class="navLink"><i class="fa-solid fa-user"></i> About</a>
+                <a href="#contact" class="navLink"><i class="fa-solid fa-business-time"></i> Contact</a>
+            </div>
+        </div>
         </nav>
         <button type="button" id="toggleBtn"><i class="fa-solid fa-bars"></i></button>
     </header>
@@ -24,16 +35,10 @@
             <div id="intro">
                 <div class="contentBox">
             <h1>Marveey Goodlife</h1>
-             <p>I'm  a  website developer dedicated to building stylish, functional websites that help people and individual succeed. </p>
              <p>
-                My interest for web design came in a curious way. When i first started using a computer in 2019, I found myself clicking "inspect" on web pages and diving into the code. I had no idea what it was at that time.
-            
-                 Seeing how I could change things on the screen by just tweaking a few lines of code on the Google developer environment was like a superpower. It was then that I knew i wanted to be more than just a user, i wanted to be a creator.
-             
-                What started as a childhood curiosity has now become a passion for solving problems and bringing ideas live on the web.
-             </p>                </div>
-              <div class="profileImg">
-                 <img src="images/marveey.jpg" alt="My profile picture" width="400" class="img">
+                I'm  a  website developer dedicated to building stylish, functional websites that help people and individual succeed.My interest for web design came in a curious way. When i first started using a computer in 2019, I found myself clicking "inspect" on web pages and diving into the code. I had no idea what it was at that time.Seeing how I could change things on the screen by just tweaking a few lines of code on the Google developer environment was like a superpower. It was then that I knew i wanted to be more than just a user, i wanted to be a creator.What started as a teen curiosity has now become a passion for solving problems and bringing ideas live on the web.</p> </div>
+              <div id="profileImageContainer">
+                 <img src="images/marveey.jpg" alt="My profile picture" width="400" id="profileImage">
             </div>
             </div>
         </section>
@@ -41,9 +46,6 @@
         <section id="about" class="profileCard">
             <div>
             <h2>my goals</h2>
-            <!--  <p>
-                I believe that the best webpages are built on the the foundation of trust and collaboration. My goal is not to just build project, but to make the process simple and transparent. I approach every project with a focus on open communication, ensuring you feel confident and informed every step of the way.
-             </p> -->
              <p>
                 I am currently focused on expanding my skill set to <b>full-stack development</b>, combining my expertise in front-end technologies like <b><abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="Cascading StyleSheets">CSS</abbr>, and JavaScript</b> with my growing knowledge of back-end logic using <b>Node.js, Express</b> and other frameworks i'll learn. I'm passonate about building from scratch and crafting custom solution that are tailored to your unique need.
              </p>

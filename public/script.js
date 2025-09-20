@@ -1,12 +1,21 @@
 
 const nav = document.querySelector('nav');
 const setDate = document.querySelector("#date");
+const closetoggle = document.querySelector("#closeBtn");
 setDate.setAttribute("class", "setDate");
 const toggleBtn = document.querySelector("#toggleBtn");
+
+/* open nav toggle */
 toggleBtn.addEventListener("click", () => {
-    nav.classList.toggle("show")
+    nav.classList.toggle("show"); /* toggle add/remove class */ 
 })
 
+/* close nav toggle */
+closetoggle.addEventListener("click", () => {
+    nav.classList.remove("show")
+});
+
+/* date */
 function newDate() {
     const now = new Date();
 const time = now.toLocaleTimeString();
